@@ -115,7 +115,7 @@ const HomeProject = () => {
               title="Projet en avant"
             />
             <p className='homeProject-container-top-subTitle'>
-              Décrouvrez le projet que j'ai choisi de mettre en avant
+              Décrouvrez le projet que J&apsos;ai choisi de mettre en avant
             </p>
           </div>
           <div className='homeProject-container-bottom'>

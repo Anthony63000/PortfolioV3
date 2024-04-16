@@ -66,7 +66,7 @@ const [animateRight, setAnimateRight] = useState(false)
                 title="Mes compétences"
             />
             <p className='skills-container-top-subTitle'>
-                Retrouvez l'ensemble de mes compétences
+                Retrouvez l&apsos;ensemble de mes compétences
             </p>
         </div>
         <div className='skills-container-row'>
