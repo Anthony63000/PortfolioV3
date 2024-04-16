@@ -9,7 +9,7 @@ import Skills from '@/components/Skills/Skills'
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 
-const page = () => {
+const Page = () => {
 
   const stateModal = useSelector((state) => state.modal.stateOfModal)
 
@@ -35,4 +35,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
