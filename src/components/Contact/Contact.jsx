@@ -36,7 +36,7 @@ const Contact = () => {
       <Image
         className='contact-found'
         src={ImageFound}
-        alt="Image d'un fond blan avec des formes"
+        alt="Image d&apos;un fond blanc avec des formes"
       />
       <div className='contact-container'>
         <div className={`${'contact-container-top'}
@@ -46,7 +46,7 @@ const Contact = () => {
             title="Contactez-moi"
           />
           <p className='contact-container-top-subTitle'>
-            N'hésitez pas à m'envoyer un message 
+            N&apos;hésitez pas à m&apos;envoyer un message 
           </p>
         </div>
         <div className='contact-container-content'>
