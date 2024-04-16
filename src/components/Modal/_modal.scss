@@ -1,0 +1,239 @@
+.modal {
+    position: fixed;
+    z-index: 200;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    box-sizing: border-box;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        box-sizing: border-box;
+
+        &-left {
+            width: 50%;
+            height: 100%;
+        }
+
+        &-right {
+            width: 50%;
+            background-color: white;
+            height: 100%;
+            border-left: 10px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transform-origin: right;
+            transform: scaleX(0);
+            opacity: 0;
+            transition: all 500ms ease;
+            box-sizing: border-box;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -10px;
+                height: 50px;
+                width: 10px;
+                background-color: white;
+                z-index: 25;
+                animation: bannerBorder 5s ease infinite;
+            }
+
+
+            &-animate {
+                transform: scaleX(1);
+                opacity: 1;
+            }
+
+            &-animateReturn {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px;
+
+                &-title {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                &-close {
+                    position: absolute;
+                    cursor: pointer;
+                    height: 20px;
+                    width: 20px;
+                    right: 25px;
+                    top: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 350ms ease;
+
+                    &:hover {
+                        transform: scale(1.2) translateY(-5px);
+                    }
+                    
+                    &::before {
+                        width: 20px;
+                        height: 3px;
+                        content: "";
+                        background-color: #000000;
+                        transform: rotate(135deg);
+                        transform-origin: center;
+                        position: absolute;
+                    }
+
+                    &::after {
+                        width: 20px;
+                        height: 3px;
+                        content: "";
+                        background-color: #000000;
+                        transform: rotate(45deg);
+                        position: absolute;
+                    }
+                }
+            }
+
+            &-row {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 0 25px;
+                gap: 20px;
+                box-sizing: border-box;
+                
+                &:nth-child(3) {
+                    background-color: rgba($color: #000000, $alpha: 0.7);
+                    color: white;
+                    padding: 30px;
+                    box-sizing: border-box;
+                }
+
+                &-image {
+                    box-shadow: 0 0 6px rgba($color: #000000, $alpha: 0.3);
+                    border-radius: 5px;
+                }
+
+                &-title {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    width: 100%;
+                    text-align: left;
+                }
+
+                &-container {
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 100%;
+                    gap: 20px;
+
+                    &-title {
+                        width: 25%;
+                        text-align: right;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+
+                    &-text {
+                        width: 75%;
+                        text-align: justify;
+                        font-size: 15px;
+                        line-height: 1.5
+                    }
+
+                    &-left {
+                        width: 25%;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        &-title {
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    &-right {
+                        display: flex;
+                        width: 75%;
+                        gap: 25px;
+                    }
+                }
+            }
+
+            &-bottom {
+                display: flex;
+                justify-content: center;
+                gap: 25px;
+
+                &-link {
+
+                    &-image {
+                        width: 30px;
+                        height: 30px;
+                        transition: all 350ms ease;
+                        cursor: pointer;
+    
+                        &:hover {
+                            transform: scale(1.1) translateY(-5px);
+                        }
+                    }
+                }
+            }
+
+            &-navigate {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                padding: 0 25px 25px 25px;
+
+                &-buttonLeft {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    padding: 15px 20px;
+                    background-color: rgba($color: #000000, $alpha: 0.7);
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 500ms ease;
+
+                    &:hover {
+                        transform: translateY(-5px) scale(1.05);
+                    }
+                }
+
+                &-buttonRight {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    flex-direction: row-reverse;
+                    padding: 15px 20px;
+                    background-color: rgba($color: #000000, $alpha: 0.7);
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 500ms ease;
+
+                    &:hover {
+                        transform: translateY(-5px) scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}

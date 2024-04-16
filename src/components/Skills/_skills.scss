@@ -1,0 +1,365 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &-found {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        filter: brightness(30%);
+    }
+
+    &-container {
+        padding: 100px 50px;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @include XL {
+            padding: 100px 50px;
+        } 
+
+        @include L {
+            padding: 100px 40px;
+        }
+
+        @include M {
+            padding: 50px 30px;
+        }
+
+        @include S {
+            padding: 50px 20px;
+        }
+
+        &-top {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            transform: translateY(-100%);
+            transition: all 500ms ease;
+            opacity: 0;
+
+            &-animate {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            @include L {
+                align-items: center;
+            }
+
+            &-subTitle {
+                font-size: 18px;
+                letter-spacing: 1px;
+
+                @include L {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            width: 100%;
+            border-radius: 10px;
+
+            @include XL {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+
+            &-left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 10px;
+                gap: 45px;
+                width: 60%;
+                opacity: 0;
+                transform: translateX(-100%);
+                transition: all 500ms ease;
+                
+                @include XL {
+                    width: 100%;
+                }
+
+                @include M {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 0;
+                }
+
+                @include S {
+                    flex-direction: column;
+                    gap: 25px;
+                }
+
+                &-animate {
+                    opacity: 1;
+                    transform: translate(0);
+                }
+
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    padding: 30px;
+                    width: fit-content;
+                    animation: animateBorder 5s ease infinite;
+
+                    @include M {
+                        position: relative;
+                        padding: 15px;
+                    }
+
+                    @include S {
+                        width: 100%;
+                        padding: 25px;
+                        box-sizing: border-box;
+                    }
+
+                    &-top {
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        width: 100%;
+                        text-wrap: nowrap;
+
+                        @include M {
+                            position: absolute;
+                            transform: rotate(-90deg);
+                            left: -50%;
+                        }
+
+                        @include S {
+                            position: static;
+                            transform: rotate(0);
+                        }
+
+                        &-title {
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            position: absolute;
+                            transform: translateY(-50%);
+                            z-index: 10;
+                            padding: 0 10px;
+                            background-color: rgba($color: #4C4C4C, $alpha: 1);
+                            top: -30px;
+
+                            @include M {
+                                top: 50%;
+                            }
+
+                            @include S {
+                                top: -25px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    &-bottom {
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+
+                        @include M {
+                            flex-direction: column;
+                        }
+
+                        @include S {
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                        }
+
+                        &-container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+                            background-color: white;
+                            width: 70px;
+                            height: 70px;
+
+                            &-animate {
+                                animation: cardSkills 1000ms ease forwards;
+                            }
+
+                            &-animateReturn {
+                                animation: cardSkillsReturn 1000ms ease forwards;
+                            }
+
+                            &-image {
+                                width: 40px;
+                                height: 40px;
+
+                                &-animate {
+                                    animation: cardSkillsImage 500ms ease;
+                                }
+                            }
+
+                            &-stack {
+                                color: black;
+                                padding: 15px;
+                                font-weight: 700;
+                                font-size: 12px;
+                                text-align: center;
+                                
+                                &-animate {
+                                    animation: cardSkillsImage 500ms ease;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-right {
+                width: 35%;
+                animation: animateBorder 5s ease infinite;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+                transform: translateX(100%);
+                opacity: 0;
+                transition: all 500ms ease-in-out;
+                box-sizing: border-box;
+
+                @include XL {
+                    width: 40%;
+                }
+
+                @include L {
+                    width: 60%;
+                }
+
+                @include M {
+                    width: 80%;
+                }
+
+                @include S {
+                    width: 100%;
+                }
+
+                &-animate {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                &-top {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    width: 100%;
+
+                    @include XL {
+                        padding-bottom: 10px;
+                    }
+
+                    &-title {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        position: absolute;
+                        transform: translateY(-50%);
+                        background-color: rgba($color: #4C4C4C, $alpha: 1);
+                        padding: 0 50px;
+                        letter-spacing: 1px;
+                        top: -30px;
+
+                        @include XL {
+                            top: -20px;
+                        }
+
+                        @include S {
+                            font-size: 12px;
+                            text-wrap: nowrap;
+                        }
+                    }
+                }
+
+                &-bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 50px;
+
+                    &-container {
+                        display: flex;
+                        flex-direction: column;
+                        animation: animateBorder 5s ease infinite;
+                        border-radius: 10px;
+                        gap: 15px;
+                        padding: 20px;
+
+                        &-top {
+                            display: flex;
+                            justify-content: center;
+                            position: relative;
+
+                            &-title {
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                position: absolute;
+                                top: -20px;
+                                transform: translateY(-50%);
+                                padding: 0 50px;
+                                background-color: rgba($color: #4C4C4C, $alpha: 1);
+
+                                @include S {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        &-bottom {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            transform: scaleY(1);
+                            transition: all 500ms ease;
+
+                            &-animate {
+                                transform: scaleY(1);
+                            }
+
+                            &-container {
+                                display: flex;
+                                flex-direction: column;
+                                padding: 10px;
+                                border-radius: 5px;
+
+                                &-top {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+
+                                    &-text {
+                                        letter-spacing: 1px;
+                                        font-weight: 600;
+                                        font-size: 14px;
+
+                                        @include S {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

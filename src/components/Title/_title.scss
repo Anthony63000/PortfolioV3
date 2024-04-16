@@ -1,0 +1,21 @@
+.title {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @include XL {
+        font-size: 20px;
+    }
+
+    @include L {
+        font-size: 18px;
+    }
+
+    @include M {
+        font-size: 16px;
+    }
+
+    @include S {
+        font-size: 15px;
+    }
+}

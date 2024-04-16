@@ -1,0 +1,329 @@
+
+{
+    "projectAhead": {
+        "title": "Épopée des compos",
+        "imageUrl": "/images/projectAhead/epopee.webp",
+        "client": "Il s'agit d'un projet personnel",
+        "description": "Dans le cadre d'un projet personnel, j'ai créé cette petite application qui permet de retrouver les noms des joueurs dans des matchs légendaires, en utilisant un système de points et de jokers.",
+        "imageAltText": "Image d'un terrain de football avec des joker un tableau de score",
+        "linkWebSite": "https://epopee-des-compos.anthodev.fr/",
+        "linkGithub": "https://github.com/Anthony63000/EpopeeDesCompos",
+        "stack" : [
+            {
+                "stackSrc" : "/images/stack/react.svg",
+                "stackAlt" : "Logo de framework React"
+            },
+            {
+                "stackSrc" : "/images/stack/redux.svg",
+                "stackAlt" : "Logo de gestionnaire d'état redux"
+            },
+            {
+                "stackSrc" : "/images/stack/sass.svg",
+                "stackAlt" : "Logo du préprocesseur sass"
+            }  
+        ]
+    },
+
+    "imageCarrouselleBanner": {
+        "images" : [
+            {
+                "url":"/images/CarrouselleBanner/resine.webp",
+                "alt":"Image du projet Résine déco 63"
+            },
+            {
+                "url":"/images/CarrouselleBanner/argentbank.webp",
+                "alt":"Image du projet argentBank"
+            },
+            {
+                "url":"/images/CarrouselleBanner/booki.webp",
+                "alt":"Image du projet booki"
+            },
+            {
+                "url":"/images/CarrouselleBanner/compos.webp",
+                "alt":"Image du projet épopée des compos"
+            },
+            {
+                "url":"/images/CarrouselleBanner/events.webp",
+                "alt":"Image du projet 324 events"
+            },
+            {
+                "url":"/images/CarrouselleBanner/nina.webp",
+                "alt":"Image du projet de la photographe nina carducci"
+            },
+            {
+                "url":"/images/CarrouselleBanner/ohmyfood.webp",
+                "alt":"Image du projet de restaurant en ligne ohmyfood"
+            },
+            {
+                "url":"/images/CarrouselleBanner/Sophie.webp",
+                "alt":"Image du projet du portfolio de sophie bluel"
+            },
+            {
+                "url":"/images/CarrouselleBanner/todo.webp",
+                "alt":"Image du projet de mon application personel todoList"
+            }
+        ]
+    },
+
+    "projects": [
+        {
+            "id": 3,
+            "category": "React",
+            "title": "Résine'Déco 63",
+            "linkGithub": "https://github.com/Anthony63000/Resine-deco",
+            "link": "https://www.resinedeco63.com/",
+            "image": "/images/portfolio/resine/resine.webp",
+            "logo":"images/logo/printIt.png",
+            "textAltImage": "Image du projet Print-it",
+            "nature": "Artisant dans le bâtiment",
+            "description": "J'ai eu l'opportunité de collaborer avec un artisan du bâtiment pour créer son site Web à partir de zéro. En utilisant React, j'ai développé une plateforme en ligne qui met en valeur les services et les réalisations uniques de l'artisan. Mon travail comprenait la conception d'une interface utilisateur intuitive et esthétique, ainsi que l'intégration de fonctionnalités interactives pour offrir une expérience de navigation fluide. En mettant l'accent sur la simplicité et l'efficacité, j'ai pu fournir à l'artisan un site Web professionnel qui reflète son savoir-faire dans le secteur du bâtiment.",
+            "stacks": [
+              "Html", "Css", "JavaScript"
+           ],
+           "stack" : [
+            {
+                "stackSrc" : "/images/stack/html.svg",
+                "stackAlt" : "Logo de la technologie html"
+            },
+            {
+                "stackSrc" : "/images/stack/css.svg",
+                "stackAlt" : "Logo de la technologie css"
+            },
+            {
+              "stackSrc" : "/images/stack/javascript.svg",
+              "stackAlt" : "Logo de la technologie javascript"
+            }  
+            ]
+          },
+        {
+          "id": 9,
+          "category": "React",
+          "title": "Epopée des compos",
+          "link": "https://epopee-des-compos.anthodev.fr/",
+          "linkGithub": "https://github.com/Anthony63000/EpopeeDesCompos",
+          "image": "/images/portfolio/epopee/compos.webp",
+          "textAltImage": "Image du projet époée des compos",
+          "nature": "Projet personel",
+          "description":"Dans le cadre d'un projet personnel, j'ai créé cette petite application qui permet de retrouver les noms des joueurs dans des matchs légendaires, en utilisant un système de points et de jokers.",
+          "stacks": [
+            "React", "Sass", "Redux"
+          ],
+          "stack" : [
+            {
+                "stackSrc" : "/images/stack/react.svg",
+                "stackAlt" : "Logo de framework React"
+            },
+            {
+                "stackSrc" : "/images/stack/redux.svg",
+                "stackAlt" : "Logo de gestionnaire d'état redux"
+            },
+            {
+                "stackSrc" : "/images/stack/sass.svg",
+                "stackAlt" : "Logo du préprocesseur sass"
+            }  
+        ]
+        },
+        {
+          "id": 8,
+          "category": "React",
+          "title": "Argent-Bank - Application bancaire",
+          "link": "",
+          "linkGithub": "https://github.com/Anthony63000/Argent-Bank",
+          "image": "/images/portfolio/argent-bank/argentbank.webp",
+          "logo":"images/logo/argent.png",
+          "textAltImage": "Image du projet Argent Bank",
+          "nature": "Projet Openclassrooms",
+          "description": "Au cours de ma formation d'Intégrateur web chez OpenClassrooms, dans le cadre du projet, je suis devenu développeur web front-end chez Argent Bank. Ma CTO m'a confié la tâche d'intégrer l'application avec React, puis de mettre en place un état global de l'application avec Redux pour gérer l'authentification des utilisateurs et la gestion de leurs informations en utilisant des appels API. Par la suite, j'ai dû définir des routes pour l'API afin de prendre en charge de nouvelles fonctionnalités à venir.",
+          "stacks": [
+            "React", "Sass", "Redux"
+         ],
+         "stack" : [
+          {
+              "stackSrc" : "/images/stack/react.svg",
+              "stackAlt" : "Logo de framework React"
+          },
+          {
+              "stackSrc" : "/images/stack/redux.svg",
+              "stackAlt" : "Logo de gestionnaire d'état redux"
+          },
+          {
+              "stackSrc" : "/images/stack/sass.svg",
+              "stackAlt" : "Logo du préprocesseur sass"
+          },
+          {
+            "stackSrc" : "/images/stack/node.svg",
+            "stackAlt" : "Logo du language de programmation nodeJs"
+          },
+          {
+              "stackSrc" : "/images/stack/mongodb.svg",
+              "stackAlt" : "Logo de la base de donnée mongoDB"
+          }   
+          ]
+        },
+        {
+          "id": 4,
+          "category": "React",
+          "title": "Kasa - Application web",
+          "link": "https://anthony63000.github.io/Kasa/",
+          "linkGithub": "https://github.com/Anthony63000/Kasa",
+          "image": "/images/portfolio/kasa/accueil.webp",
+          "logo":"images/logo/kasa.png",
+          "textAltImage": "Image du projet Kasa",
+          "nature": "Projet Openclassrooms",
+          "description": "Durant ce projet que j'ai réalisé pendant ma formation, je suis développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancé dans l'intégration de ce projet. J'ai donc intégré l'application complète avec React.",
+          "stacks": [
+            "React", "Sass"
+         ],
+         "stack" : [
+          {
+              "stackSrc" : "/images/stack/react.svg",
+              "stackAlt" : "Logo de framework React"
+          },
+          {
+              "stackSrc" : "/images/stack/sass.svg",
+              "stackAlt" : "Logo du préprocesseur sass"
+          }  
+          ]
+        },
+        {
+          "id": 2,
+          "category": "HTML&CSS",
+          "title": "OhMyFood - Répertoire de restaurants en ligne",
+          "linkGithub": "https://github.com/Anthony63000/Ohmyfood",
+          "link": "https://anthony63000.github.io/Ohmyfood/",
+          "image": "/images/portfolio/ohmyfood/ohmyfood.webp",
+          "logo":"images/logo/ohmyfood.png",
+          "textAltImage": "Image du projet OhMyFood",
+          "nature": "Projet Openclassrooms",
+          "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais développeur junior au sein d'une jeune startup du nom de Ohmyfood. Ma mission était d'intégrer le site grâce aux maquettes du designer et des consignes de mon CTO. Ce projet intègre le préprocesseur Sass à la place du Css classique et c'est ici que j'ai mis en oeuvre mes premières animations CSS",
+          "stacks": [
+            "Html", "Sass"
+         ],
+         "stack" : [
+          {
+              "stackSrc" : "/images/stack/html.svg",
+              "stackAlt" : "Logo du language de programmation html"
+          },
+          {
+              "stackSrc" : "/images/stack/sass.svg",
+              "stackAlt" : "Logo du préprocesseur sass"
+          }  
+          ]
+        },
+        {
+          "id": 5,
+          "category": "Javascript",
+          "title": "Nina Cardduci - Optimisation du site",
+          "linkGithub": "https://github.com/Anthony63000/NinaCarducci",
+          "link": "https://anthony63000.github.io/NinaCarducci/",
+          "image": "/images/portfolio/nina/nina.webp",
+          "logo":"images/logo/nina.png",
+          "textAltImage": "Image du projet de la phtotographe Nina Carducci",
+          "nature": "Projet Openclassrooms",
+          "description": "Durant ce projet réalisé pendant ma formation chez Openclassrooms, je débute en tant que développeur freelance et je décroche une offre pour l'optimisation du SEO du site de Nina Cardduci, une photographe localisée à Bordeaux. Ici je me suis occupé d'optimiser le site que ce soit en matière de performance mais aussi en matière d'accèssibilité et de SEO. J'ai aussi mis en place des balises méta pour configurer le lien du site sur les réseaux sociaux ainsi que la mise en place de résultats enrichies pour configurer l'affichage du site sur Google.",
+          "stacks": [
+            "Html", "Css", "JavaScript", "Bootsrap"
+         ],
+         "stack" : [
+          {
+              "stackSrc" : "/images/stack/html.svg",
+              "stackAlt" : "Logo de la technologie html"
+          },
+          {
+              "stackSrc" : "/images/stack/css.svg",
+              "stackAlt" : "Logo de la technologie css"
+          },
+          {
+            "stackSrc" : "/images/stack/javascript.svg",
+            "stackAlt" : "Logo de la technologie javascript"
+          }  
+          ]
+        },
+        {
+          "id": 6,
+          "category": "React",
+          "title": "724 Events - Débugage de l'application",
+          "link": "",
+          "linkGithub": "https://github.com/Anthony63000/724Events",
+          "image": "/images/portfolio/events/events.webp",
+          "logo":"images/logo/724events.png",
+          "textAltImage": "Image du projet 724 Event",
+          "nature": "Projet Openclassrooms",
+          "description": "Durant ce projet réalisé pendant ma formation chez Openclassrooms, je suis un développeur web front-end freelance et je décroche une offre pour réparer le site d'une agence d'événementiels. Dans cette mission je me suis occupé de réparer le site mais aussi d'écrire des tests unitaires ainsi que des tests d'intégration pour veiller au bon fonctionnement du site de bout en bout.",
+          "stacks": [
+            "React", "Sass"
+         ],
+         "stack" : [
+          {
+              "stackSrc" : "/images/stack/react.svg",
+              "stackAlt" : "Logo de framework React"
+          },
+          {
+              "stackSrc" : "/images/stack/sass.svg",
+              "stackAlt" : "Logo du préprocesseur sass"
+          }  
+          ]
+        },
+        {
+          "id": 1,
+          "category": "HTML&CSS",
+          "title": "Booki - Page d'accueil d'une agence de voyage",
+          "link": "https://anthony63000.github.io/Booki/",
+          "linkGithub": "https://github.com/Anthony63000/Booki",
+          "textAltImage": "Image du projet Booki",
+          "image": "/images/portfolio/booki/booki.webp",
+          "logo": "images/logo/booki.png",
+          "nature": "Projet Openclassrooms",
+          "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en alternance dans une start-up du nom de Booki. L'entreprise voulait développer un site qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. On m'a donc confié la tâche de l'intégration de l'interface du site à partir de la maquette du designer (maquette Figma) et des spécifications fonctionnelles de ma CTO.",
+          "stacks": [
+             "Html", "Css"
+          ],
+          "stack" : [
+            {
+                "stackSrc" : "/images/stack/html.svg",
+                "stackAlt" : "Logo du language de programmation html"
+            },
+            {
+                "stackSrc" : "/images/stack/css.svg",
+                "stackAlt" : "Logo de la technologie css"
+            }  
+            ]
+        },
+        {
+          "id": 10,
+          "category": "Javascript",
+          "title": "Portfolio Sophie Bluel",
+          "link": "",
+          "linkGithub": "https://github.com/Anthony63000/PortfolioSophieBluel",
+          "image":"/images/portfolio/SophieBluel/Sophie.webp",
+          "textAltImage": "Image du portfolio de Sophie Bluel",
+          "nature": "Projet Openclassrooms",
+          "description":"En tant que développeur front-end au sein de l'agence ArchiWebos, j'ai été assigné à renforcer une équipe travaillant sur la conception du site portfolio d'une architecte d'intérieur. Ma mission principale consiste à créer une page de présentation des travaux de l'architecte en utilisant le code HTML fourni. De plus, je suis chargé de développer la page de connexion de l'administrateur du site (le client), à partir de zéro, pour gérer l'accès aux fonctionnalités de gestion du contenu. Enfin, je devrai créer une modale permettant d'uploader de nouveaux médias, également à partir de zéro, pour permettre à l'administrateur d'ajouter des éléments multimédias au site.",
+          "stacks": [
+            "Html", "Css", "JavaScript", "NodeJs", "Express", "MongoDB"
+         ],
+         "stack" : [
+          {
+              "stackSrc" : "/images/stack/html.svg",
+              "stackAlt" : "Logo du language de programmation html"
+          },
+          {
+              "stackSrc" : "/images/stack/css.svg",
+              "stackAlt" : "Logo de la technologie css"
+          },
+          {
+            "stackSrc" : "/images/stack/javascript.svg",
+            "stackAlt" : "Logo de la technologie javascript"
+          },
+          {
+            "stackSrc" : "/images/stack/node.svg",
+            "stackAlt" : "Logo du language de programmation nodeJs"
+          },
+          {
+              "stackSrc" : "/images/stack/mongodb.svg",
+              "stackAlt" : "Logo de la base de donnée mongoDB"
+          } 
+          ]
+        }
+    ]  
+}

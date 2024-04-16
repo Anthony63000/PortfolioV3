@@ -1,0 +1,368 @@
+
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &-found {
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        height: 100%;
+        filter: brightness(30%);
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        color: white;
+        width: 100%;
+        padding: 100px 50px;
+
+        @include XL {
+            padding: 100px 50px;
+            gap: 60px;
+        }
+
+        @include L {
+            padding: 100px 40px;
+            gap: 40px;
+        }
+
+        @include M {
+            padding: 50px 30px;
+            gap: 30px;
+        }
+
+        @include S {
+            padding: 50px 20px;
+        }
+
+        &-top {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: all 500ms ease;
+            
+            @include L {
+                align-items: center;
+            }
+
+            &-animate {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            &-subTitle {
+                @include L {
+                    text-align: center;
+                }
+            }
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+
+            @include XL {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+
+            @include L {
+                gap: 40px;
+            }
+
+            @include M {
+                gap: 30px;
+            }
+
+            @include S {
+                gap: 20px;
+            }
+
+            &-left {
+                display: flex;
+                width: 50%;
+                justify-content: center;
+                opacity: 0;
+                transform: translateX(-100%);
+                transition: all 500ms ease;
+
+                @include XL {
+                    width: 80%;
+                }
+
+                @include M {
+                    width: 90%;
+                }
+
+                @include S {
+                    width: 100%;
+                }
+
+                &-animate {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                &-row {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+        
+                    &-form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 55px;
+                        width: 100%;
+                        padding: 20px;
+                        box-sizing: border-box;
+
+                        &-item {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            &-label {
+                                color: rgba($color: white, $alpha: 0.85);
+                            }
+
+                            &-input {
+                                background-color: transparent;
+                                height: 25px;
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                border-bottom: 2px solid rgba($color: white, $alpha: 0.85);
+                                background-color: transparent;
+                                color: white;
+                                font-size: 16px;
+                                text-indent: 5px;
+                                padding: 5px;
+                                transition: all 350ms ease;
+
+                                &:focus {
+                                    outline: none;
+                                    background-color: rgba($color: #000000, $alpha: 0.2);
+                                }
+
+                                &-isValid {
+                                    border-bottom: 2px solid rgba($color: green, $alpha: 0.5);
+                                }
+
+                                &-isNotValid {
+                                    border-bottom: 2px solid red;
+                                }
+
+                                &-error {
+                                    border-radius: 5px;
+                                    color: rgba($color: red, $alpha: 1);
+                                    margin-top: 5px;
+                                    font-size: 14px;
+                                }
+
+                                &:-webkit-autofill {
+                                    background-color: transparent !important;
+                                }
+                            }
+
+                            &-inputMessage {
+                                height: 150px;
+                                text-align: start;
+                                font-family: Arial, sans-serif;
+                            }
+
+                            &-error {
+                                color: red;
+                            }
+                        }
+
+                        &-bottom {
+                            display: flex;
+                            justify-content: center;
+    
+                            &-button {
+                                padding: 15px 30px;
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                border: none;
+                                border-radius: 5px;
+                                font-weight: 500;
+                                cursor: pointer;
+                                transition: all 350ms ease;
+                                color: black;
+
+                                &:hover {
+                                    transform: scale(1.05) translateY(-5px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-right {
+                width: 50%;
+                display: flex;
+                gap: 75px;
+                justify-content: flex-end;
+                align-items: center;
+                opacity: 0;
+                transform: translateX(100%);
+                transition: all 500ms ease;
+                box-sizing: border-box;
+
+                @include L {
+                    width: 70%;
+                    justify-content: center;
+                    gap: 50px;
+                }
+
+                @include M {
+                    width: 85%;
+                    gap: 40px;
+                }
+
+                @include S {
+                    width: 90%;
+                    gap: 25px;
+                }
+
+                &-animate {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 50px;
+                    border-radius: 5px;
+                    background-color: rgba($color: black, $alpha: 0.5);
+                    box-shadow: 0 0 6px rgba($color: #000000, $alpha: 1);
+                    gap: 25px;
+                    box-sizing: border-box;
+
+                    @include L {
+                        padding: 40px;
+                    }
+
+                    @include M {
+                        padding: 30px;
+                    }
+
+                    @include S {
+                        padding: 20px;
+                        gap: 15px;
+                    }
+
+                    &-top {
+                        display: flex;
+
+                        &-title {
+                            font-size: 22px;
+
+                            @include L {
+                                font-size: 20px;
+                            }
+
+                            @include M {
+                                font-size: 20px;
+                            }
+
+                            @include S {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    &-row {
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+
+                        @include S {
+                            gap: 15px;
+                        }
+    
+                        &-left {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                            transform-origin: bottom;
+                            transition: all 500ms ease;
+
+                            &:hover {
+                                background-color: rgba($color: black, $alpha: 1);
+                            }
+
+                            &-link {
+                                padding: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                @include S {
+                                    padding: 0;
+                                }
+
+                                &-image {
+                                    width: 50px;
+                                    height: 50px;
+
+                                    @include L {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+
+                                    @include M {
+                                        width: 35px;
+                                        height: 35px;
+                                    }
+
+                                    @include S {
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &-right {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            &-description {
+                                font-size: 20px;
+                                font-weight: 500;
+
+                                @include L {
+                                    font-size: 18px;
+                                }
+
+                                @include S {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            &-text {
+                                @include S {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

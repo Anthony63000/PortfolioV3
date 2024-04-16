@@ -1,0 +1,67 @@
+@keyframes bannerBorder {
+    0% {
+        top: 0;
+    } 50% {
+        transform: translateY(-100%);
+        top: 100%;
+    } 100% {
+        top: 0;
+    }
+};
+
+@keyframes bannerBorderHorizontal {
+    0% {
+        left: 0;
+    } 50% {
+        transform: translateX(-100%);
+        left: 100%;
+    } 100% {
+        left: 0;
+    }
+};
+
+@keyframes cardSkills {
+    0% {
+        transform: rotate(0);
+    } 50% {
+        transform: rotate(180deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cardSkillsImage {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes cardSkillsImageReturn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes cardSkillsReturn {
+    0% {
+        transform: rotate(360deg);
+    } 50% {
+        transform: rotate(180deg);
+    } 100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes animateBorder {
+    0% {
+        border: 1px solid rgba($color: white, $alpha: 1.0);
+    } 50% {
+        border: 1px solid rgba($color: white, $alpha: 0.4);
+    } 100% {
+        border: 1px solid rgba($color: white, $alpha: 1.0);
+    }
+}

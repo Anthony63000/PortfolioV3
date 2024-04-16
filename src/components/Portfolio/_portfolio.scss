@@ -1,0 +1,230 @@
+.portfolio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &-foundImage {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 50px;
+        width: 100%;
+
+        @include XL {
+            padding: 100px 50px;
+        }
+
+        @include L {
+            padding: 100px 40px;
+        }
+
+        @include M {
+            padding: 50px 30px;
+        }
+
+        @include S {
+            padding: 50px 20px;
+        }
+
+        &-top {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: all 500ms ease;
+
+            @include M {
+                align-items: center;
+            }
+
+            &-animate {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            &-subTitle {
+                font-size: 16px;
+                letter-spacing: 1px;
+
+                @include M {
+                    text-align: center;
+                }
+            }
+        }
+
+        &-row {
+            display: flex;
+            justify-content: center;
+
+            &-filterBar {
+                display: flex;
+                width: fit-content;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                padding: 25px;
+                border-radius: 100px;
+                gap: 50px;
+                background-color: rgba($color: #000000, $alpha: 0.8);
+                box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.3);
+
+                &-title {
+                    color: white;
+                }
+
+                &-container {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: white;
+                    transition: all 350ms ease;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    &:hover {
+                        transform: scale(1.10) translateY(-5px);
+                    }
+
+                    &-image {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    &-item {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+                justify-items: center;
+
+                @include XL {
+                    grid-template-columns:  repeat(2, 1fr);
+                }
+
+                @include M {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                &-item {
+                    display: flex;
+                    justify-content: center;
+                    box-shadow: 0 0 25px rgba($color: #000000, $alpha: 0.3);
+                    width: 100%;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    transform-origin: top;
+                    opacity: 0;
+                    transform: scaleY(0);
+                    transition: all 500ms ease;
+
+                    &-animate {
+                        opacity: 1;
+                        transform: scaleY(1);
+                    }
+
+                    &:hover {
+
+                        .portfolio-container-row-container-item-image {
+                            filter: grayscale(0);
+                            transform: scale(1.10);
+                        }
+                    }
+
+                    &-image {
+                        border-radius: 5px;
+                        filter: grayscale(100%);
+                        transition: all 350ms ease;
+                    }
+
+                    &-divSup {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: rgba($color: #000000, $alpha: 0.8);
+                        padding: 20px;
+                        transform: scaleY(0);
+                        transform-origin: bottom;
+                        transition: all 350ms ease;
+
+                        &-animate {
+                            transform: scaleY(1);
+                        }
+
+                        &-animateReturn {
+                            transform: scaleY(0);
+                        }
+
+                        &-top {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &-title {
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                font-family: 'Josefin Slab', serif;
+                                color: white;
+                                text-align: center;
+                                letter-spacing: 1px;
+                                line-height: 1.5;
+                            }
+                        }
+
+                        &-bottom {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &-image {
+                                width: 25px;
+                                height: 25px;
+                                transition: all 350ms ease;
+
+                                &:hover {
+                                    transform: scale(1.1) translateY(-5px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-button {
+                border: none;
+                background-color: #000000;
+                color: white;
+                padding: 10px 15px;
+                font-size: 16px;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: all 350ms ease;
+
+                &:hover {
+                    transform: translateY(-5px) scale(1.1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+
+    &-found {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        filter: brightness(30%);
+    }   
+
+    &-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        padding: 100px;
+
+        @include XL {
+            padding: 100px 50px;
+        }
+
+        @include L {
+            padding: 100px 40px;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 50px;
+        }
+
+        @include M {
+            padding: 50px 30px;
+        }
+
+        @include S {
+            padding: 50px 20px;
+        }
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            padding-left: 25px;
+            position: relative;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 500ms ease;
+            gap: 30px;
+
+            &-animate {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            @include L {
+                width: 100%;
+                padding-left: 0;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 50px;
+                width: 5px;
+                background-color: white;
+                border-radius: 5px;
+                left: 0;
+                top: 0;
+                animation: bannerBorder 5s ease infinite;
+
+                @include L {
+                    display: none;
+                }
+            }
+
+            &-text {
+                font-size: 17px;
+                text-align: justify;
+                line-height: 1.7;
+                letter-spacing: 1px;
+
+                @include XL {
+                    font-size: 16px;
+                }
+
+                @include M {
+                    font-size: 15px;
+                }
+
+                @include S {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &-right {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 50%;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 500ms ease;
+
+            @include L {
+                justify-content: center;
+            }
+
+            &-animate {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            &-image {
+                width: 75%;
+                height: 100%;
+
+                @include XL {
+                    width: 85%;
+                }
+
+                @include L {
+                    width: 90%;
+                }
+
+                @include M {
+                    width: 95%;
+                }
+
+                @include S {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

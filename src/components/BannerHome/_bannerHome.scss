@@ -1,0 +1,193 @@
+.bannerHome {
+    height: calc(100vh - 163px);
+    display: flex;
+    align-items: center;
+    margin-top: 163px;
+
+    &-foundImage {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 163px);
+        border-radius: 5px;
+        margin-top: 163px;
+        filter:blur(1px);
+
+        @include M {
+            margin-top: 145.45px;
+            height: calc(100vh - 145.45px);
+        }
+
+        @include S {
+            margin-top: 122.83px;
+            height: calc(100vh - 122.83px);
+        }
+    }
+    
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0 100px;
+
+        @include XL {
+            padding: 0 50px;
+        }
+
+        @include L {
+            padding: 0 40px;
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        @include M {
+            padding: 0 30px;
+        }
+
+        @include S {
+            padding: 0 20px;
+        }
+
+        &-left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 5px 5px 5px 5px;
+            padding-left: 15px;
+            position: relative;
+            box-sizing: border-box;
+            gap: 30px;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 500ms ease;
+
+            @include XL {
+                gap: 20px;
+            }
+
+            @include L {
+                width: 100%;
+                align-items: center;
+                padding-left: 0;
+            }
+
+            &-animate {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                height: 50px;
+                width: 5px;
+                background-color: black;
+                left: 0;
+                animation: bannerBorder 5s ease infinite;
+                border-radius: 5px;
+
+                @include L {
+                    display: none;
+                }
+            }
+
+            &-title {
+                font-size: 64px;
+                text-transform: uppercase;
+                font-family: 'Josefin Slab', serif;
+
+                @include XL {
+                    font-size: 38px;
+                }
+
+                @include L {
+                    text-align: center;
+                    font-size: 28px;
+                }
+
+                @include S {
+                    font-size: 22px;
+                }
+            }
+
+            &-subTitle {
+                font-size: 28px;
+                text-transform: uppercase;
+
+                @include XL {
+                    font-size: 22px;
+                }
+
+                @include L {
+                    font-size: 18px;
+                }
+
+                @include S {
+                    font-size: 16px;
+                }
+            }
+
+            &-text {
+                font-size: 24px;
+
+                @include XL {
+                    font-size: 18px;
+                }
+
+                @include L {
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        
+        }
+
+        &-right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 500ms ease;
+
+            @include L {
+                width: 60%;
+            }
+
+            @include M {
+                width: 70%;
+            }
+
+            @include S {
+                width: 100%;
+            }
+
+            &-animate {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            &-image {
+                width: 100%;
+                height: 100%;
+                filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+                position: relative;
+            }
+
+            &-imageAbsolute {
+                position: absolute;
+                top: 8%;
+                left: 22.2%;
+                width: 59.5%;
+                border-radius: 2px;
+                height: 51%;
+            }
+        }
+    }
+}
