@@ -17,6 +17,22 @@
         &-left {
             width: 50%;
             height: 100%;
+
+            @include XL {
+                width: 35%;
+            }
+
+            @include L {
+                width: 25%;
+            }
+
+            @include M {
+                width: 15%;
+            }
+
+            @include S {
+                width: 0;
+            }
         }
 
         &-right {
@@ -32,6 +48,22 @@
             opacity: 0;
             transition: all 500ms ease;
             box-sizing: border-box;
+
+            @include XL {
+                width: 65%;
+            }
+
+            @include L {
+                width: 75%;
+            }
+
+            @include M {
+                width: 85%;
+            }
+
+            @include S {
+                width: 100%;
+            }
 
             &::before {
                 content: "";
@@ -66,6 +98,14 @@
                     font-size: 20px;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+
+                    @include M {
+                        font-size: 18px;
+                    }
+
+                    @include S {
+                        font-size: 16px;
+                    }
                 }
 
                 &-close {
@@ -112,17 +152,30 @@
                 padding: 0 25px;
                 gap: 20px;
                 box-sizing: border-box;
+
+                @include S {
+                    padding: 0 20px;
+                }
                 
                 &:nth-child(3) {
                     background-color: rgba($color: #000000, $alpha: 0.7);
                     color: white;
                     padding: 30px;
                     box-sizing: border-box;
+
+                    @include S {
+                        padding: 20px;
+                    }
                 }
 
                 &-image {
                     box-shadow: 0 0 6px rgba($color: #000000, $alpha: 0.3);
                     border-radius: 5px;
+
+                    @include S {
+                        width: 60%;
+                        height: 100%;
+                    }
                 }
 
                 &-title {
@@ -130,6 +183,10 @@
                     text-transform: uppercase;
                     width: 100%;
                     text-align: left;
+
+                    @include S {
+                        font-size: 14px;
+                    }
                 }
 
                 &-container {
@@ -138,19 +195,35 @@
                     width: 100%;
                     gap: 20px;
 
+                    @include S {
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+
                     &-title {
                         width: 25%;
                         text-align: right;
                         text-transform: uppercase;
                         font-size: 14px;
                         font-weight: 700;
+
+                        @include S {
+                            font-size: 12px;
+                            width: 100%;
+                            text-align: left;
+                        }
                     }
 
                     &-text {
                         width: 75%;
                         text-align: justify;
                         font-size: 15px;
-                        line-height: 1.5
+                        line-height: 1.5;
+
+                        @include S {
+                            font-size: 13px;
+                            width: 100%;
+                        }
                     }
 
                     &-left {
@@ -158,10 +231,19 @@
                         display: flex;
                         justify-content: flex-end;
 
+                        @include S {
+                            width: 100%;
+                        }
+
                         &-title {
                             font-size: 14px;
                             font-weight: 700;
                             text-transform: uppercase;
+
+                            @include S {
+                                font-size: 12px;
+                                width: 100%;
+                            }
                         }
                     }
 
@@ -169,6 +251,21 @@
                         display: flex;
                         width: 75%;
                         gap: 25px;
+
+                        @include S {
+                            width: 100%;
+                            gap: 15px;
+                            justify-content: center;
+                        }
+
+                        &-stackImage {
+
+                            @include S {
+                                width: 30px;
+                                height: 30px;
+                                margin-top: 10px;
+                            }
+                        }
                     }
                 }
             }
@@ -199,6 +296,13 @@
                 gap: 50px;
                 padding: 0 25px 25px 25px;
 
+                @include S {
+                    gap: 15px;
+                    padding: 0 15px 15px 15px ;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 &-buttonLeft {
                     display: flex;
                     align-items: center;
@@ -210,6 +314,10 @@
                     font-size: 14px;
                     cursor: pointer;
                     transition: all 500ms ease;
+
+                    @include S {
+                        gap: 15px;
+                    }
 
                     &:hover {
                         transform: translateY(-5px) scale(1.05);

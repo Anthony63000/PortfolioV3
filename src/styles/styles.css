@@ -1195,6 +1195,26 @@ body {
   width: 50%;
   height: 100%;
 }
+@media (max-width: 1200px) {
+  .modal-container-left {
+    width: 35%;
+  }
+}
+@media (max-width: 992px) {
+  .modal-container-left {
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .modal-container-left {
+    width: 15%;
+  }
+}
+@media (max-width: 576px) {
+  .modal-container-left {
+    width: 0;
+  }
+}
 .modal-container-right {
   width: 50%;
   background-color: white;
@@ -1208,6 +1228,26 @@ body {
   opacity: 0;
   transition: all 500ms ease;
   box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+  .modal-container-right {
+    width: 65%;
+  }
+}
+@media (max-width: 992px) {
+  .modal-container-right {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .modal-container-right {
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  .modal-container-right {
+    width: 100%;
+  }
 }
 .modal-container-right::before {
   content: "";
@@ -1238,6 +1278,16 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .modal-container-right-top-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .modal-container-right-top-title {
+    font-size: 16px;
+  }
 }
 .modal-container-right-top-close {
   position: absolute;
@@ -1279,15 +1329,31 @@ body {
   gap: 20px;
   box-sizing: border-box;
 }
+@media (max-width: 576px) {
+  .modal-container-right-row {
+    padding: 0 20px;
+  }
+}
 .modal-container-right-row:nth-child(3) {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 30px;
   box-sizing: border-box;
 }
+@media (max-width: 576px) {
+  .modal-container-right-row:nth-child(3) {
+    padding: 20px;
+  }
+}
 .modal-container-right-row-image {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+}
+@media (max-width: 576px) {
+  .modal-container-right-row-image {
+    width: 60%;
+    height: 100%;
+  }
 }
 .modal-container-right-row-title {
   font-size: 16px;
@@ -1295,11 +1361,22 @@ body {
   width: 100%;
   text-align: left;
 }
+@media (max-width: 576px) {
+  .modal-container-right-row-title {
+    font-size: 14px;
+  }
+}
 .modal-container-right-row-container {
   display: flex;
   justify-content: flex-start;
   width: 100%;
   gap: 20px;
+}
+@media (max-width: 576px) {
+  .modal-container-right-row-container {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 .modal-container-right-row-container-title {
   width: 25%;
@@ -1308,26 +1385,64 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .modal-container-right-row-container-title {
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+  }
+}
 .modal-container-right-row-container-text {
   width: 75%;
   text-align: justify;
   font-size: 15px;
   line-height: 1.5;
 }
+@media (max-width: 576px) {
+  .modal-container-right-row-container-text {
+    font-size: 13px;
+    width: 100%;
+  }
+}
 .modal-container-right-row-container-left {
   width: 25%;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 576px) {
+  .modal-container-right-row-container-left {
+    width: 100%;
+  }
 }
 .modal-container-right-row-container-left-title {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (max-width: 576px) {
+  .modal-container-right-row-container-left-title {
+    font-size: 12px;
+    width: 100%;
+  }
+}
 .modal-container-right-row-container-right {
   display: flex;
   width: 75%;
   gap: 25px;
+}
+@media (max-width: 576px) {
+  .modal-container-right-row-container-right {
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .modal-container-right-row-container-right-stackImage {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
 }
 .modal-container-right-bottom {
   display: flex;
@@ -1349,6 +1464,14 @@ body {
   gap: 50px;
   padding: 0 25px 25px 25px;
 }
+@media (max-width: 576px) {
+  .modal-container-right-navigate {
+    gap: 15px;
+    padding: 0 15px 15px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .modal-container-right-navigate-buttonLeft {
   display: flex;
   align-items: center;
@@ -1360,6 +1483,11 @@ body {
   font-size: 14px;
   cursor: pointer;
   transition: all 500ms ease;
+}
+@media (max-width: 576px) {
+  .modal-container-right-navigate-buttonLeft {
+    gap: 15px;
+  }
 }
 .modal-container-right-navigate-buttonLeft:hover {
   transform: translateY(-5px) scale(1.05);

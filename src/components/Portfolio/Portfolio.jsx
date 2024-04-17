@@ -110,7 +110,7 @@ const Portfolio = () => {
       <div className='portfolio-container'>
         <div className={`${'portfolio-container-top'} ${animateTop ? "portfolio-container-top-animate" : ''}`}>
           <Title title="Mes réalisations" />
-          <p className='portfolio-container-top-subTitle'>Découvrez l&apsos;ensemble de mes réalisations</p>
+          <p className='portfolio-container-top-subTitle'>Découvrez l&apos;ensemble de mes réalisations</p>
         </div>
         <div className='portfolio-container-row'>
           <WorksContainer data={dataProject} animatedItems={animatedItems} />
