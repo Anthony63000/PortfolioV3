@@ -113,7 +113,7 @@
                 justify-items: center;
 
                 @include XL {
-                    grid-template-columns:  repeat(2, 1fr);
+                    grid-template-columns: repeat(2, 1fr);
                 }
 
                 @include M {
@@ -133,6 +133,11 @@
                     opacity: 0;
                     transform: scaleY(0);
                     transition: all 500ms ease;
+
+                    @include S {
+                        opacity: 1;
+                        transform: scaleY(1);
+                    }
 
                     &-animate {
                         opacity: 1;
