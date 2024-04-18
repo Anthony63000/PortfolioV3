@@ -46,6 +46,7 @@
             transform-origin: right;
             transform: scaleX(0);
             opacity: 0;
+            overflow-y: auto;
             transition: all 500ms ease;
             box-sizing: border-box;
             gap: 25px;
