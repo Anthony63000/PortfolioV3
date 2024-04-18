@@ -93,7 +93,8 @@ body {
   z-index: 100;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  width: 100vw;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -1488,7 +1489,8 @@ body {
 }
 @media (max-width: 576px) {
   .modal-container-right-navigate-buttonLeft {
-    gap: 15px;
+    width: 90%;
+    justify-content: center;
   }
 }
 .modal-container-right-navigate-buttonLeft:hover {
@@ -1509,6 +1511,12 @@ body {
 }
 .modal-container-right-navigate-buttonRight:hover {
   transform: translateY(-5px) scale(1.05);
+}
+@media (max-width: 576px) {
+  .modal-container-right-navigate-buttonRight {
+    width: 90%;
+    justify-content: center;
+  }
 }
 
 .skills {

@@ -318,7 +318,8 @@
                     transition: all 500ms ease;
 
                     @include S {
-                        gap: 15px;
+                        width: 90%;
+                        justify-content: center;
                     }
 
                     &:hover {
@@ -341,6 +342,11 @@
 
                     &:hover {
                         transform: translateY(-5px) scale(1.05);
+                    }
+
+                    @include S {
+                        width: 90%;
+                        justify-content: center;
                     }
                 }
             }
